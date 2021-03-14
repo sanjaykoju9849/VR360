@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Create Space, upload 360 images, floor plan and edit space function. ">
+    <parameter name="SpaceName parameter" value="Rajnish 2D space111" />
+    <test name="Create 2D Space and upload Images and Floor Plan">
+        <classes>
+            <class name="test.frontend.tests.CreateSpaceTest">
+                <methods>
+                    <parameter name="Space Type parameter" value="2D" />
+                    <include name="createSpace" />
+                </methods>
+            </class>
+            <class name="test.frontend.tests.Upload2DSpaceFilesTest">
+                <methods>
+                    <include name="upload2DSpace360ImagesTest" />
+                    <include name="uploadFloorPlan" />
+                </methods>
+            </class>
+            <class name="test.frontend.tests.EditFunctionFor2DSpace">
+                <methods>
+                    <include name="editFunctionFor2DSpace" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

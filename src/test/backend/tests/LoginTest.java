@@ -21,8 +21,8 @@ public class LoginTest extends Setup {
        // loginToTheModule();
 
         myWebDriver.get("https://dev-bspace.ekbana.net/login");
-        loginPageObj.setEmailInput("rawnboy+11@gmail.com");
-        loginPageObj.setPasswordInput("password");
+        loginPageObj.setEmailInput("");
+        loginPageObj.setPasswordInput("");
         loginPageObj.clickLoginBtn();
 
 
